@@ -1,0 +1,7 @@
+deep-translator
+keyboard 
+langdetect
+mss 
+pillow 
+pytesseract
+requests
