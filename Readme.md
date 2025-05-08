@@ -24,7 +24,7 @@ SmartOCR+ is a Windows utility that lets you extract text from any part of your 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/smartocr_plus.git
+git clone https://github.com/Krithik1/smartocr_plus.git
 cd smartocr_plus
 ```
 
