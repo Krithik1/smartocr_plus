@@ -1,8 +1,9 @@
 deep-translator
-keyboard 
+keyboard
 langdetect
-mss 
-pillow 
+mss
+pillow
 pytesseract
+pywinstyles
 requests
 sv-ttk

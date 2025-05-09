@@ -1,11 +1,12 @@
 import keyboard
 import time
 from smart_ocr.region_selector import select_region
-from smart_ocr.ocr_engine import extract_text
+from smart_ocr.ocr_engine import extract_text, initialize_ocr
 from smart_ocr.gui import show_popup
 
 def main():
     print("SmartOCR+ running... Press Windows+O to start.")
+    initialize_ocr()
 
     def handle_hotkey():
         time.sleep(0.2)
