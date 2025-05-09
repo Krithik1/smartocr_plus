@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 import webbrowser
 from smart_ocr.translate import translate_text
+import sv_ttk
 
 def callback_open_url(url):
     webbrowser.open(url)
@@ -52,7 +53,7 @@ def show_popup(text):
     translated = translate_text(text)
     if translated:
         tk.Label(frame, text="Translated Text:", font=("Segoe UI", 10, "bold")).pack(anchor="w", pady=(10,0))
-        trans_box = tk.Text(frame, wrap="word", height=4, width=60, bg="#f8f8f8")
+        trans_box = tk.Text(frame, wrap="word", height=10, width=60)
         trans_box.insert("1.0", translated)
         trans_box.config(state="disabled")
         trans_box.pack()
@@ -107,5 +108,7 @@ def show_popup(text):
 
     if len(text.strip().split()) == 1:
         tk.Button(btn_frame, text="Define", command=define_word).pack(side="left", padx=5)
+        
+    sv_ttk.set_theme("dark")
 
     root.mainloop()

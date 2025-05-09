@@ -5,3 +5,4 @@ mss
 pillow 
 pytesseract
 requests
+sv-ttk
